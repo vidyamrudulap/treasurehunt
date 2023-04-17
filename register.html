@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        body 
+        {
+            background-color:black;
+            position:relative;
+            top:-40px;
+        }
+        h1
+        {
+            color:whitesmoke;
+            position:relative;
+            left:450px;
+            top:30px;
+            font-weight:bold;   
+            font-size:50px;
+            font:klavika;
+        }
+        table.center
+        {
+            margin-left:300px;
+            margin-right: auto;
+        }
+.signup
+{
+    background: none;
+    background-color: #994d00;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    position:relative;
+    left:130px;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    font-weight:bold;
+}
+.signup:hover{
+    background-color: goldenrod;
+}
+td
+{
+    position:relative;
+    left:40px;
+}
+.quick
+{
+    position:relative;
+    left:180px;
+}
+#E
+{
+border: 0px solid;
+padding: 10px;
+box-shadow: 5px 10px 8px grey;
+position:relative;
+left:30px;
+}
+        </style>
+</head>
+<body>
+        <h1>Treasure hunt</h1>
+        <br>
+        <form method="post" action="login.php">
+        <table id="E" cellspacing:10px style="background-color:white;width:525px;" class="center" >
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <th colspan="2" style="font-size:25px; position:relative;left:-8px;" >Create your account</th>
+            </tr>
+            <tr>
+                <td style="font:italic;" align:"center" class="quick">It's quick and easy.</td>
+            </tr>
+            <tr></tr><tr></tr>
+            <tr></tr><tr></tr>
+            <tr></tr><tr></tr>
+            <tr></tr><tr></tr>
+            <tr>
+                <td ><label for = "username" >Username:</label></td>
+                <td align="center"><input type="text" name="uname" required></td>
+            </tr>
+            <tr></tr><tr></tr>
+            <tr>
+                <td ><label for="email">email address:</label></td>
+                <td align="center"><input type="email" name="eid" required></td>
+            </tr>
+            
+            <tr></tr><tr></tr>
+            <tr>
+                <td><label for="">Mobile number</label></td>
+                <td align="center"><input type="number" name="phne"></td>
+            </tr>
+            
+            <tr></tr><tr></tr>
+            <tr>
+                <td><label for="password">New password:</label></td>
+                <td align="center"><input type="password" name="pwd"></td>
+            </tr>
+            
+            <tr></tr><tr></tr>
+            <tr>
+                <td><label for="DOB">Date of birth:</label></td>
+                <td style="position:relative;left:99px;"><input type="date" name="DOB" required></td>
+            </tr>
+            <tr></tr><tr></tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td style="position:relative;left:97px;"><input type="radio" name="gen">Male</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="position:relative;left:97px;"><input type="radio" name="gen">Female</td>
+            </tr>
+            <tr></tr><tr></tr>
+            <tr></tr><tr></tr>
+            <tr><td colspan="2" style="font-size:12px;position:relative;left:30px;">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.</td></tr>
+            <tr><td colspan="2" style="font-size:12px;position:relative;left:30px;">You may receive SMS notifications from us and can opt out at any time.</td></tr>
+            <tr></tr><tr></tr><tr></tr><tr></tr>
+            <tr></tr><tr></tr><tr><th><input class="signup" type="submit" onclick="d()" value="Sign Up"></th></tr>
+            <tr></tr><tr></tr>
+            <tr><td colspan="2" style="font-size:14px;position:relative;left:130px;color:black;">Already have an account? <a style="color:#3b5998;" href="login.html">Login here</a></tr></td>
+            <tr></tr><tr></tr>
+        </table>  
+        <p id="dd" style="position:relative;left:200px;font-size:large;color:#3b5998"></p>  
+</form>
+    </body>
+</html>
+
+
+
+<script>
+
+    function d() {
+      document.getElementById("dd").innerHTML = "Happy journey user..!";
+    }
+    </script>

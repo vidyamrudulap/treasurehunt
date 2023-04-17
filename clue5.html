@@ -1,0 +1,93 @@
+<html>
+    <script>
+        var submitAnswer = function() {
+
+var radios = document.getElementsByName('choice');
+var val= "";
+for (var i = 0, length = radios.length; i < length; i++) {
+    if (radios[i].checked) {
+       val = radios[i].value; 
+       break;
+     }
+}
+
+if (val == "" ) {
+  alert('please select choice answer');
+} else if ( val == "A.R.Rahman" ) {
+  location.href="win1.html";
+} else 
+{
+  alert('Answer is wrong');
+  location.href="dead.html";
+}
+};
+    </script>
+    <style>
+        body{
+            background-image: url("c5b3.webp");
+            background-position: -13% 29% ;
+            color:whitesmoke;
+            text-align: center;
+            margin-top: 17%;
+        }
+        h1
+        {
+            margin-top: 12%;
+        }
+        .t1,.t2
+        {
+            position: relative;
+            left:306px;
+            top:10px;
+        }
+        .o1,.o2
+        {
+            position:relative;
+            left:300px;
+
+        }
+        .t3,.t4
+        {
+            position: relative;
+            left:700px;
+            top:-93px;
+        }
+        .o3,.o4
+        {
+            position:relative;
+            left:700px;
+            top:-102px;
+        }
+        .but
+        {
+            position:relative;
+            top:-102px;
+            padding: 6px 8px 6px 8px;
+            border-radius: 60px;
+        }
+        .but:hover{
+            background-color: #994d00;
+            color:white;
+            position:relative;
+            top:-100;
+
+        }
+    </style>
+</html>
+<body>
+    <h1>Among the following which <i>Indian</i> has won an oscar ?</h1><br>
+<form >
+    <table>
+        <tr>
+        <th ><input type="radio" name="choice" class="o1" value="Scripting"> </th><th><h2 class="t1">Hrithik Roshan</h2></th></tr>
+        <tr>
+            <th ><input type="radio" name="choice" class="o2" value="Programming"></th><th> <h2 class="t2">Shahrukh Khan</h2></th></tr>
+                <tr>
+                    <th ><input type="radio" name="choice" class="o3" value="A.R.Rahman"> </th><th><h2 class="t3" >A.R.Rahman</h2></th></tr>
+                        <tr>
+                            <th ><input type="radio" name="choice" class="o4" value="None of These"> </th><th><h2 class="t4">None of These</h2></th></tr>
+    </table>
+</form>
+<button onclick="submitAnswer()" class="but">Submit Answer</button>
+</body>
+</html>

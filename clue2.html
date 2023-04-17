@@ -1,0 +1,50 @@
+<head>
+
+    <script type="text/javascript">
+    
+        window.onload = function () {
+           document.getElementById('button1').onclick = function() {
+            if(document.getElementById("code").value == 'avengers')
+                location.href = "clue3.html";
+            if(document.getElementById("code").value == 'marvel')
+                location.href = "clue3.html";
+            if(document.getElementById("code").value == 'endgame')
+                location.href = "clue3.html";
+            
+            else{
+            location.href = "clue22.html";     }
+            return false;
+           }
+        }
+        
+    </script>
+
+
+    <style>
+        body{
+            background-color:black;
+            color:whitesmoke;
+            text-align: center;
+            align-items: center;
+            margin-top: 5%;
+        }
+        .button1:hover{
+            background-color: #000080;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: larger;">CLUE2</h1>
+    <img src="c2b1.jpeg" alt="marvel" width=40% height="60%">
+    <form method="post">
+        <br>
+        
+        <label>Which movie do u think it is now ?</label>
+        <br><br>
+    <input name="code" id="code" type="text" class="button"/>
+    <br /><br/>
+    <label>&nbsp;</label>
+    <input name="submit" type="submit" id="button1" value="submit" class="button1" style="cursor:pointer"/>
+    </form>
+</body>

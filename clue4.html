@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <script type="text/javascript">
+    
+            window.onload = function () {
+               document.getElementById('button1').onclick = function() {
+                if(document.getElementById("code").value == 'titanic')
+                    location.href = "clue5.html";
+                
+                else{
+                location.href = "dead.html";     }
+                return false;
+               }
+            }
+            
+        </script>
+        <style>body{
+            overflow:hidden;
+            background-image: url("c4b2.gif");
+            background-repeat: no-repeat;
+            background-size:100% 100% ;
+            color:white;
+        }
+        h2{
+            position:relative;
+            left:75%;
+            top:10%;
+        }
+        h3{
+            position:relative;
+            left:65%;
+            top:50px;
+        }
+        input{
+            position:relative;
+            left:72%;
+            top:9px;
+        }
+        .button{
+            
+            border-radius:60px;
+            padding: 10px 10px 10px 10px;
+
+        }
+        .button:hover{
+            position:relative;
+            top:1px;
+            background-color: bisque;
+            
+        }
+        
+        .button1{
+            
+            position:relative;
+            top:7px;
+            left:910px;
+            border-radius:60px;
+            padding: 10px 20px 10px 10px;
+
+        }
+        .button1:hover{position:relative;
+            top:5px;
+            background-color: bisque;
+        }
+        </style>
+    </head>
+</html>
+<body>
+    <h2>CLUE4</h2>
+    <form method="post">
+        <br>
+        <h3>Which movie do u think this scene is from ?</h3>
+        <br><br>
+    <input name="code" id="code" type="text" class="button"/>
+    <br /><br/>
+    <label>&nbsp;</label>
+    <input name="submit" type="submit" id="button1" value="submit" class="button1" style="cursor:pointer"/>
+    </form>
+</body>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+        body{
+            text-align: center;
+            overflow:hidden ;
+        }
+            .fullclick li {
+  list-style: none;
+  margin: 1em 0;
+  padding: 20px 10px;
+  background:#800000;
+  position: relative;
+}
+.fullclick a.main {
+  color: whitesmoke;
+  text-align: right;
+  display: block;
+  z-index: 1;
+}
+.fullclick li a.main::after {
+  position: absolute;
+  top: 0;
+  left: -1;
+  right: 0;
+  bottom: 0;
+  content: ' ';
+}
+li:hover
+{
+    background-color:#cc0000;
+}
+.fullclick li a.main::hover
+{
+    background-color: #cc0000;
+}
+
+        </style>
+    </head>
+    <body>
+        <ul class="fullclick">
+            <li class="click1">
+              <h1 ><a href="clue1.html" class="main" style="text-decoration: none; text-align: center;">CLUE 1</a></h1>
+            </li>
+            <li>
+              <h1 ><a href="clue2.html" class="main" style="text-decoration: none; text-align: center;">CLUE 2</a></h1>
+            </li>
+            <li>
+              <h1 ><a href="clue3.html" class="main" style="text-decoration: none; text-align: center;">CLUE 3</a></h1>
+            </li>
+            <li>
+              <h1 ><a href="clue4.html" class="main" style="text-decoration: none; text-align: center;">CLUE 4</a></h1>
+            </li>
+            <li>
+              <h1 ><a href="clue5.html" class="main" style="text-decoration: none; text-align: center;">CLUE 5</a></h1>
+            </li>
+          </ul>
+    </body>
+</html>
